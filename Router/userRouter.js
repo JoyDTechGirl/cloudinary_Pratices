@@ -4,7 +4,7 @@ const upload = require("../utils/multer");
 const express = require("express");
 const router = express.Router();
 
-router.post("/register", upload.single("profilePicture"), register);
+router.post("/registers", upload.single("profilePicture"), register);
 
 router.get('/users',getAll)
 
